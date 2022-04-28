@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login form</title>
+
+    </head>
+    <style>
+        .container{
+            position: relative;
+            border-radius: 5px;
+            background-color: aqua;
+            padding: 20px 0 30px 0;
+        }
+            input,
+            .btn{
+                width: 100%;
+                padding: 12px;
+                border-radius: 4px;
+                margin: 5px 0;
+                opacity: 0.85;
+                display: inline-block;
+                font-size: 17px;
+                line-height: 20px;
+                text-decoration: none;
+
+        }
+        input:hover,
+        .btn:hover{opacity: 1;}
+        .fb{
+            background-color: white;
+            color: blue;
+
+        }
+        .twitter{
+            background-color:white;
+            color:blue;
+        }
+        .google{
+            background-color: white;
+            color:blue;
+        }
+        input[type=submit]{
+            background-color: azure;
+            color: blue;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(32, 15, 182);
+        }
+        .col{
+            float: left;
+            width: 50%;
+            margin: auto;
+            padding: 0 50px;
+            margin-top: 6px;
+
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .vl{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            border: 2px ;
+            height: 150px;
+        }
+        .inner{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: aqua;
+            border: 2px;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+        .hide-md-lg{
+            display: none;
+        }
+        .bottom-container{
+            text-align: center;
+            background-color: aliceblue;
+            border-radius: 0px 0px 4px 4px;
+        }
+        body{
+            background-color: aqua;
+            margin-left: 350px;
+            margin-right: 400px;
+        }
+        html{
+            background-color: white;
+        }
+
+
+    </style>
+<body>
+<div class="container">
+        <form action="/action_page.php">
+    <div class="row">
+        <h2 style="text-align: center">login with social media or manually</h2>
+            <div class="vl">
+            
+    </div>
+        <div class="col">
+                <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i>login with facebook
+                </a>
+                <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i>login with twitter
+                </a>
+                <a href="#" class="google btn">
+                    <i class="fa fa-google fa-fw"></i>login with google+     </a>
+
+
+        </div>
+            <div class="col">
+                <div class="hide-md-lg">
+                    <p>or sign in manually:</p>
+                </div>
+                <input type="text" name="username" placeholder="username" required>
+                <input type="text" name="password" placeholder="password" required>
+                <input type="submit" value="login">                        </div>
+
+</div>
+</form>
+</div>
+<div class="bottom-container">
+<div class="row">
+    <div class="col">
+        <a href="#" style="color: #7dce14;" class="btn">sign up</a>
+    </div>
+    <div class="col">
+        <a href="#" style="color: rgb(202, 0, 0);" class="btn">forgot password?</a>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+</html>
